@@ -2,50 +2,15 @@
 
 <PageTitle>Index</PageTitle>
 
-<h1>Equity Tax Calculator</h1>
-
-<div class="input">
-  <label class="input-label" for="grossProfitInput">Enter Gross Profit:</label>
-  <input class="input-field" type="number" id="grossProfitInput" @bind="grossProfit" @onkeypress="HandleKeyPress" />
-</div>
-<div class="input">
-  <label class="input-label" for="grossProfitInput">Enter Your Short Term Tax Rate: (%)</label>
-  <input class="input-field" type="number" id="grossProfitInput" @bind="shortTaxRate" @onkeypress="HandleKeyPress" />
-</div>
-<div class="information-link">
-  <a href="https://www.nerdwallet.com/article/taxes/capital-gains-tax-rates" target="_blank">If you don't know your rate, click this link!</a>
+<div class="main-header">
+  <h1>Profit Buddy</h1>
+  <p>Your rough estimate live tax calculator for short term equities and 1256 contracts!<p>
 </div>
 
-<button class="btn btn-primary" @onclick="IncomeInput">Calculate</button>
+<Equities />
 
-<div class="result">
-  <h2 class="header-md">Total Taxation: $@Math.Round(totalTax, 3)</h2>
-  <h2 class="header-md blue">Net Profit: $@Math.Round(netProfit, 3)</h2>
-</div>
 
 
 @code {
-    public double grossProfit = 0;
-    public double longTaxRate = 15; //15% is the default value for ST
-    public double shortTaxRate = 22; //22% is the default value for ST
-    public double longAmount;
-    public double shortAmount;
-    public double totalTax;
-    public double netProfit;
 
-    private void IncomeInput()
-    {
-        totalTax = grossProfit * (shortTaxRate / 100);
-        netProfit = grossProfit - totalTax;
-
-    }
-    <!-- Adds the enter key pressing to send the value -->
-    private void HandleKeyPress(KeyboardEventArgs e)
-    {
-        if (e.Key == "Enter")
-        {
-            // Trigger the same calculation as the button click event
-            IncomeInput();
-        }
-    }
 }
