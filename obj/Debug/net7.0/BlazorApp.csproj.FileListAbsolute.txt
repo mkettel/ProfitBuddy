@@ -30,3 +30,4 @@
 /Users/mattkettelkamp/Desktop/blazor/BlazorApp/obj/Debug/net7.0/BlazorApp.pdb
 /Users/mattkettelkamp/Desktop/blazor/BlazorApp/obj/Debug/net7.0/BlazorApp.genruntimeconfig.cache
 /Users/mattkettelkamp/Desktop/blazor/BlazorApp/obj/Debug/net7.0/ref/BlazorApp.dll
+/Users/mattkettelkamp/Desktop/blazor/BlazorApp/obj/Debug/net7.0/scopedcss/Pages/Index.razor.rz.scp.css
