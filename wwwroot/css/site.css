@@ -126,3 +126,21 @@ a, .btn-link {
 .blue {
   color: blue;
 }
+
+/* alert-info */
+.alert-info {
+  margin-top: 15px;
+  background-color: transparent;
+}
+.alert-info .alert-text {
+  padding: 15px 15px;
+  width: 50%;
+  border-radius: 5px;
+  background-color: #669bbc;
+  margin: 0px;
+  color: white;
+}
+.alert-info a {
+  color: white;
+  text-decoration: none;
+}

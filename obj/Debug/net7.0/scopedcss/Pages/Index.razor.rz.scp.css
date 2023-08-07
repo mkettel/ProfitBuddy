@@ -11,7 +11,7 @@
 
 /* Learning Container */
 .learn-container[b-cawgfizwi4] {
-  margin-top: 35px;
+  margin-top: 60px;
 }
 .learn-container .learn-header[b-cawgfizwi4] {
   margin: 0px 0px 20px 0px;
@@ -19,4 +19,5 @@
 
 .learn-2-col[b-cawgfizwi4] {
   display: flex;
+  gap: 10px;
 }
